@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finland</title>
+  <style>
+    html{
+      height: 100;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .dashboard {
+      width: 1100px;
+      height: 850px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 1rem;
+      grid-template-areas:  "t t t t"
+                            "p w w w"
+                            "g c v n";
+                            
+    }
+ 
+    h1 {
+      color: black;
+      font-size: 2rem;
+    }
+
+    h2, p {
+      padding: 0;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .title {
+      grid-area: t;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-self: center;
+    }
+
+
+    .population {
+      grid-area: p;
+      background-image: url(images/finland-8.jpg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+    
+    .welcome {
+      grid-area: w;
+      background-image: url(images/finland-2.jpg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 1rem;
+    }
+
+    .gdp {
+      grid-area: g;
+      background-image: url(images/finland-3.jpg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 1rem;
+    }
+
+    .code {
+      grid-area: c;
+      background-image: url(images/finland-4.jpg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 1rem;
+
+    }
+
+    .govt {
+      grid-area: v;
+      background-image: url(images/finland-1.jpg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+
+    .news {
+      grid-area: n;
+      background-image: url(images/finland-5.jpg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: space-around;
+      padding: 1rem;
+    }
+
+    .news button {
+      border: none;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1 class="title">Finland</h1>
+
+    <div class="population grid-cell">
+        <h2>population: </h2>
+        <p>5,536,146</p>
+    </div>
+    
+    <div class="welcome grid-cell">
+      <h2>Welcome</h2>
+      <p>Natural Resources, Economic Initiatives, Community Spaces</p>
+    </div>
+
+    <div class="gdp grid-cell">
+      <h2>GDP</h2>
+      <p>257 billion</p>
+    </div>
+
+    <div class="code grid-cell">
+      <h2>Calling Code</h2>
+      <p>+ 358</p>
+    </div>
+
+    <div class="govt grid-cell">
+      <h2>Government</h2>
+      <p>Unitary parliamentary republic</p>
+    </div>
+
+    <div class="news grid-cell">
+      <h2>News</h2>
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="name"/>
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="email"/>
+      <button>Send</button>
+    </div>
+
+  </div>
+  
+</body>
+</html>
